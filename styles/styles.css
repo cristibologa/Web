@@ -151,32 +151,45 @@ svg * {
   }
 }
 @font-face {
-  font-family: "Space Grotesk";
-  src: url("../fonts/SpaceGrotesk-Regular.woff2") format("woff2");
+  font-family: "Work Sans";
+  src: url("../fonts/WorkSans-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: "Space Grotesk";
-  src: url("../fonts/SpaceGrotesk-Medium.woff2") format("woff2");
-  font-weight: 500;
+  font-family: "Work Sans";
+  src: url("../fonts/WorkSans-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Space Mono";
+  src: url("../fonts/SpaceMono-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Space Mono";
+  src: url("../fonts/SpaceMono-Bold.woff2") format("woff2");
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 :root {
-  --color-dark: #191A23;
-  --color-dark-alt: #292A32;
+  --color-dark: #2B2B2B;
+  --color-dark-alt: #3B3B3B;
   --color-light: #FFFFFF;
-  --color-accent: #B9FF66;
-  --color-gray: #F3F3F3;
-  --color-gray-alt: #898989;
+  --color-accent: #A259FF;
+  --color-gray: #858584;
   --border: 1px solid var(--color-dark);
   --border-radius: 14px;
   --border-radius-small: 7px;
   --border-radius-large: 45px;
   --shadow: 0 5px 0 0 var(--color-dark);
-  --font-family-base: "Space Grotesk", sans-serif;
+  --font-family-base: "Work Sans", sans-serif;
   --container-width: 1240px;
   --container-padding-x: 20px;
   --section-padding-y: 70px;
@@ -228,12 +241,12 @@ svg * {
 }
 
 body {
-  font-size: clamp(16px, 1.25vw, 18px);
+  font-size: clamp(16px, 1.5277777778vw, 22px);
   font-family: var(--font-family-base);
   font-weight: 400;
   line-height: 1.28;
-  color: var(--color-dark);
-  background-color: var(--color-light);
+  color: var(--color-light);
+  background-color: var(--color-dark);
 }
 
 a,
@@ -250,11 +263,11 @@ a {
 }
 
 h1, h2, h3, h4 {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 h1, .h1 {
-  font-size: clamp(43px, 4.1666666667vw, 60px);
+  font-size: clamp(24px, 4.6527777778vw, 67px);
 }
 
 h2, .h2 {
