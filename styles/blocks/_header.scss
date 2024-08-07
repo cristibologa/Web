@@ -1,0 +1,40 @@
+.header{
+	padding-inline: 50px;
+	padding-block: 35px;
+
+
+	&__inner{
+		display: flex;
+    	justify-content: space-between;
+    	align-items: center;
+    	column-gap: 40px;
+
+		
+	}
+	&__logo{
+		flex-shrink: 0;
+		@include tablet {
+			max-width: 180px;
+		  }
+	  
+	}
+	&__right{
+		display: flex;
+		align-items: center;
+		gap: 50px;
+		&__menu{
+
+			&-list{
+				display: flex;
+				  align-items: center;
+				  gap: 50px;
+	
+			}
+		}
+
+		&__button img{
+			margin-right: 10px;
+		}
+	}
+	
+}

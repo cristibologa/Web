@@ -1,0 +1,90 @@
+.hero{
+	display: flex;
+	justify-content: space-between;
+	@include mobile{
+		flex-direction: column;
+		gap: 30px;
+	}
+	&__title{
+		@include mobile{
+			order: -3;
+		}
+	}
+	&__main{
+		display: flex;
+		flex-direction: column;
+    	align-items: start;
+    	max-width: 510px;
+    	row-gap: 20px;
+
+		@include mobile{
+			display: contents;
+			//la mobile display content pentru a lua de la parinte 
+		}
+	}
+	&__description{
+		@include fluid-text(22,16);
+		@include mobile{
+			order: -2;
+		}
+	}
+
+	&__button{
+		padding-inline: 50px;
+		&-img{
+			margin-right: 5px;
+		}	
+	}
+	&__list{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family:'Space Mono' ;
+		@include fluid-text(28,22);
+		font-weight: 700;
+		gap: 20px;
+		span{
+			font-family:'Work Sans';
+			@include fluid-text(22,16);
+			font-weight: 400;
+		}
+	}
+
+	&__poster{
+		display: flex;
+		flex-direction: column;
+		border-radius: 30px;
+		overflow: hidden;
+		background: var(--color-dark-alt);
+		gap: 20px;
+		padding-bottom: 20px;
+		@include mobile{
+			order: -1;
+		}
+		
+
+		&-desc{
+			margin-left: 20px;
+			font-size: 22;
+			font-weight: 600;
+		}
+		&-user{
+			display: flex;
+			gap: 15px;
+			margin-left: 20px;
+			&-avatar{
+				border-radius: 50%;
+			}
+		}
+	}
+
+	&-image{
+		height: auto;
+
+		@include mobile{
+			width: 100%;
+		}
+	}
+
+
+}

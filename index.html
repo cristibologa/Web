@@ -10,8 +10,121 @@
 </head>
 <body>
   <header class="header">
-    
+    <div class="header__inner ">
+      <a class="header__logo logo" href="/">
+        <img
+          class="logo__image"
+          src="./images/logo.svg"
+          alt="NFT"
+          width="245" height="32" loading="lazy"
+        />
+
+      </a>
+      <div class="header__right hidden-tablet" >
+        <nav class="header__right__menu ">
+          <ul class="header__right__menu-list">
+            <li class="header__right__menu-item">
+              <a class="header__right__menu-link" href="/">Marketplace</a>
+            </li>
+            <li class="header__right__menu-item">
+              <a class="header__right__menu-link" href="/">Rankings</a>
+            </li>
+            <li class="header__right__menu-item">
+              <a class="header__right__menu-link" href="/">Connext a wallet</a>
+            </li>
+          </ul>
+        </nav>
+        <button
+          class="header__right__button button "
+          type="button"
+        >
+          <img src="./images/icon/user.svg" alt="user">
+          Sign Up
+        </button>
+      </div>
+      <button
+        class="header__burger-button burger-button visible-tablet"
+        type="button"
+      >
+        <span class="visually-hidden">Open navigation menu</span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
   </header>
+
+  <main>
+    <section class="section container">
+      <div class="hero">
+        <div class="hero__main">
+          <h1 class="hero__title">Discover digital art & Collect NFTs</h1>
+          <div class="hero__description">
+            NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.
+          </div>
+          <button class="hero__button button" type="button">
+            <img src="images/icon/rocket.svg"
+            class="hero__button-img" 
+            alt="rocket"
+            width="20" height="20" loading="lazy"
+            >
+            Get Started</button>
+          
+          <div class="hero__info">
+            <ul class="hero__list">
+                <li class="hero__item">
+                  240k+ <br>
+                  <span>Total sale</span>
+                </li>
+                <li class="hero__item">
+                  100k+<br>
+                  <span>Auctions</span>
+                </li>
+                <li class="hero__item">
+                  240k+<br>
+                  <span>Artists</span>
+                </li>
+            </ul>
+          </div>
+        </div>
+        <div class="hero__poster">
+          <img class="hero-image" src="images/hero.jpg" 
+          alt="hero"
+          width="510"
+          height="400"
+          >
+          <div class="hero__poster-desc"> Space Walking</div>
+          <div class="hero__poster-user ">
+            <img  class="hero__poster-user-avatar" src="images/icon/hero_avatar.jpg" 
+            alt="avatar"
+            width="24"
+            height="24"
+            >
+            Animakid
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section container">
+      <header class="section__header"> 
+        <div class="heder__wraper">
+          <h2 class="section__header-title">Trending Collection</h2>
+        <p class="section__header-p">Checkout our weekly updated trending collection.</p>
+        </div>
+        
+        <!-- <button class="button section__header-butoon">View Rankings</button> -->
+        
+      </header>
+      <div class="section__body">
+          <div class="collection">
+            <div class="colection__item">
+              <img  class="colection__img" src="" alt="">
+              <div class="colection__item-"></div> 
+            </div>
+          </div>
+      </div>
+    </section>
+  </main>
 
   <main class="content">
   

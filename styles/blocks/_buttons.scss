@@ -1,0 +1,32 @@
+.button {
+	@include flex-center(true);
+  
+	height: var(--button-height);
+	padding-inline: 30px;
+	font-size: 16px;
+	color: var(--color-light);
+	background-color: var(--color-accent);
+	border-radius: var(--border-radius);
+	border: var(--border);
+  
+	@include hover {
+	  color: var(--color-light);
+	  background-color: transparent;
+	  border: var(--border);
+	}
+  
+	// &--transparent {
+	//   color: var(--color-dark);
+	//   background-color: transparent;
+	// }
+  
+	// &--accent {
+	//   color: var(--color-dark);
+	//   background-color: var(--color-accent);
+  
+	//   @include hover {
+	// 	color: var(--color-accent);
+	// 	background-color: var(--color-dark);
+	//   }
+	// }
+  }
