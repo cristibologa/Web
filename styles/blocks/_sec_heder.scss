@@ -2,8 +2,13 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding-bottom: 50px;
 	&-p{
 		@include fluid-text(22, 16);
 		margin-top: 10px;
+	}
+
+	&-butoon{
+		background: transparent;
 	}
 }

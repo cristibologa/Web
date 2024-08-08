@@ -8,6 +8,7 @@
 	background-color: var(--color-accent);
 	border-radius: var(--border-radius);
 	border: var(--border);
+	cursor: pointer;
   
 	@include hover {
 	  color: var(--color-light);

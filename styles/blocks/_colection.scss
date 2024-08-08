@@ -1,0 +1,47 @@
+.collection{
+	display: flex;
+	justify-content: space-between;
+	@include tablet{
+		justify-content: space-around;
+	}
+
+	
+	&__item{
+		display: flex;
+		flex-direction: column;
+		min-width: 330px;
+		gap: 20px;
+		
+	}
+	&__img{
+		border-radius: 20px;
+	}
+	&__gal{
+		display: flex;
+		justify-content: space-between;
+		&-img{
+			border-radius: 22px;
+		}
+		&-box{
+			width: 100px;
+			height: 100px;
+			@include flex-center();
+			background: var(--color-accent);
+			border-radius: 22px;
+		}
+	}
+	&__name{
+		font-size: 22px;
+		font-family: 'Work Sans';
+		font-weight: 600;
+	}
+	&__user{
+		display: flex;
+		gap: 10px;
+		font-size: 16px;
+
+		&-img{
+			border-radius: 50%;
+		}
+	}
+}
